@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Northstar | US Market Research</title>
+<style>
+:root{--bg:#0a1020;--panel:#111b30;--panel2:#16233b;--line:#263653;--text:#e8eef9;--muted:#91a1bc;--blue:#5c9cff;--cyan:#43d4d0;--green:#36c98f;--red:#f07886;--amber:#f3bd63}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 75% -10%,#1c3152 0,transparent 34%),var(--bg);color:var(--text);font:14px Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+button,input,select{font:inherit}button{cursor:pointer}.shell{display:flex;min-height:100vh}.side{width:238px;background:#0c1528;border-right:1px solid var(--line);padding:24px 16px;flex-shrink:0}.brand{display:flex;gap:11px;align-items:center;padding:2px 10px 28px;font-weight:800;font-size:17px;letter-spacing:.3px}.logo{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#061326;font-weight:900}.side small{display:block;color:#667a9c;font-size:10px;font-weight:700;letter-spacing:1.4px;padding:12px 12px}.nav{display:flex;gap:12px;align-items:center;padding:12px;border-radius:9px;color:var(--muted);margin:3px 0;border:1px solid transparent;background:none;width:100%;text-align:left}.nav.active{background:#172744;color:#fff;border-color:#2b4165}.nav span{width:19px;text-align:center}.side-note{margin:34px 7px 0;padding:14px;border:1px solid var(--line);border-radius:11px;color:var(--muted);font-size:11px;line-height:1.6}.main{min-width:0;flex:1;padding:27px 34px 60px;max-width:1600px;margin:0 auto;width:100%}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.eyebrow{color:var(--cyan);font-size:10px;letter-spacing:1.6px;font-weight:800}.title{font-size:26px;font-weight:750;margin:6px 0}.sub{color:var(--muted)}.status{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px}.dot{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 12px #36c98f}.toolbar{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:#17243b;color:var(--text);padding:9px 13px;border-radius:8px;font-weight:650}.btn.primary{background:linear-gradient(135deg,#397ce3,#397fc9);border-color:#528ee8;color:white}.btn.subtle{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed}.tabbar{display:flex;gap:5px;border-bottom:1px solid var(--line);margin-bottom:22px}.tab{padding:12px 18px;color:var(--muted);border:0;border-bottom:2px solid transparent;background:transparent;font-weight:700}.tab.active{color:white;border-color:var(--cyan)}.grid{display:grid;grid-template-columns: minmax(0,1.55fr) minmax(280px,.85fr);gap:17px}.card{background:linear-gradient(180deg,#121e34,#101a2d);border:1px solid var(--line);border-radius:13px;padding:19px;margin-bottom:17px;min-width:0}.cardhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.card h3{font-size:14px;margin:0;font-weight:750}.muted{color:var(--muted)}.fieldgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field label{display:block;color:var(--muted);font-size:11px;margin-bottom:7px}.field input,.field select{width:100%;background:#0b1528;border:1px solid #2b3c5b;border-radius:8px;color:var(--text);padding:10px 11px;outline:none}.field input:focus,.field select:focus{border-color:var(--blue)}.checkrow{display:flex;gap:9px;align-items:center;color:#c5d1e5;margin:10px 0}.checkrow input{accent-color:var(--blue)}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid #344867;background:#172640;border-radius:20px;padding:7px 10px;color:#c5d3e8;font-size:11px}.chip.on{border-color:#347d9b;background:#123548;color:#8fe5df}.condition{display:grid;grid-template-columns:1.1fr .75fr 1fr auto;gap:8px;margin:8px 0;align-items:center}.condition select,.condition input{width:100%;background:#0b1528;border:1px solid #2b3c5b;border-radius:7px;color:var(--text);padding:9px}.remove{border:0;background:transparent;color:var(--red);font-size:18px}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th{text-align:left;color:#8496b4;font-size:10px;text-transform:uppercase;letter-spacing:.8px;padding:11px;border-bottom:1px solid var(--line)}td{padding:12px 11px;border-bottom:1px solid #202f49;color:#d4deed;font-size:12px}tbody tr:hover{background:#17253c}.positive{color:var(--green)}.negative{color:var(--red)}.metricgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:17px}.metric{padding:16px;background:#111d32;border:1px solid var(--line);border-radius:11px}.metric .label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}.metric .value{font-size:22px;font-weight:750;margin-top:9px}.metric .hint{font-size:10px;color:#8293af;margin-top:5px}.empty{padding:32px 15px;text-align:center;color:var(--muted);border:1px dashed #344765;border-radius:10px;line-height:1.7}.pill{font-size:10px;padding:5px 8px;border-radius:20px;background:#17334a;color:#83dcd5}.notice{border:1px solid #57482c;background:#302817;color:#e8c98d;padding:12px;border-radius:9px;font-size:11px;line-height:1.6;margin-top:12px}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.hide{display:none!important}.footer{color:#637795;font-size:10px;margin-top:26px}.bar{height:8px;background:#23344f;border-radius:10px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan))}.upload{display:inline-flex;align-items:center;gap:8px}.upload input{display:none}
+@media(max-width:900px){.side{width:68px;padding:18px 8px}.brand{padding:0 9px 24px}.brand .brandname,.side small,.nav .navtext,.side-note{display:none}.nav{justify-content:center;padding:13px 4px}.main{padding:22px 18px}.grid{grid-template-columns:1fr}.metricgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.main{padding:17px 12px}.title{font-size:22px}.top{align-items:flex-start;gap:12px;flex-direction:column}.fieldgrid{grid-template-columns:1fr}.condition{grid-template-columns:1fr 1fr}.condition .rightval{grid-column:1/2}.condition .remove{grid-column:2/3;justify-self:end}.metric .value{font-size:19px}.tab{padding:11px 10px;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="side">
+ <div class="brand"><div class="logo">N</div><span class="brandname">NORTHSTAR</span></div>
+ <small>WORKSPACE</small>
+ <button class="nav active" data-page="scanner"><span>⌕</span><b class="navtext">Scanner</b></button>
+ <button class="nav" data-page="backtester"><span>▥</span><b class="navtext">Backtester</b></button>
+ <button class="nav" data-page="analytics"><span>◫</span><b class="navtext">Analytics</b></button>
+ <div class="side-note"><b style="color:#dce8fa">Research workspace</b><br>Historical US equities · R2 Parquet<br><br><span class="pill">Read-only data layer</span></div>
+</aside>
+<main class="main">
+ <div class="top"><div><div class="eyebrow">US EQUITY RESEARCH PLATFORM</div><div class="title" id="pageTitle">Historical Scanner</div><div class="sub" id="pageSub">Find stocks that matched your rules on a specific historical session.</div></div><div class="status"><i class="dot"></i> Workspace ready <span class="muted">·</span> <span id="today"></span></div></div>
+ <div class="tabbar">
+  <button class="tab active" data-page="scanner">01 &nbsp; Scanner</button>
+  <button class="tab" data-page="backtester">02 &nbsp; Backtester</button>
+  <button class="tab" data-page="analytics">03 &nbsp; Analytics</button>
+ </div>
+
+ <section id="scanner" class="page">
+  <div class="grid">
+   <div>
+    <div class="card">
+     <div class="cardhead"><h3>Historical scan setup</h3><span class="pill">Daily timeframe</span></div>
+     <div class="fieldgrid">
+      <div class="field"><label>SCAN DATE · US MARKET</label><input id="scanDate" type="date" value="2026-10-02"></div>
+      <div class="field"><label>TICKER UNIVERSE</label><select id="scanLimit"><option value="0">Full universe · all tickers</option><option value="500">First 500 · quick test</option><option value="100">First 100 · smoke test</option><option value="1000">First 1,000</option></select></div>
+      <div class="field"><label>CONDITION LOGIC</label><select id="logic"><option>AND</option><option>OR</option></select></div>
+      <div class="field"><label>ADR PERIOD</label><select id="adrPeriod"><option>15</option><option>20</option><option>10</option></select></div>
+     </div>
+     <div style="margin-top:20px" class="cardhead"><h3>Quick filters</h3><span class="muted" style="font-size:11px">Select to add to rules</span></div>
+     <div class="chips">
+      <button class="chip on" data-preset="stack">EMA 10 &gt; 20 &gt; 50 &gt; 150 &gt; 200</button>
+      <button class="chip" data-preset="adr">ADR &gt; 3%</button>
+      <button class="chip" data-preset="up">Bullish pocket pivot</button>
+      <button class="chip" data-preset="down">Bearish pocket pivot</button>
+     </div>
+     <div style="margin-top:20px" class="cardhead"><h3>Custom condition builder</h3><button class="btn subtle" id="addCondition">+ Add condition</button></div>
+     <div id="conditions"></div>
+     <div class="actions"><button class="btn primary" id="downloadScanner">Download scanner config</button><button class="btn" id="resetScanner">Reset filters</button><a class="btn" href="https://github.com/deekshithCcc/my-backtesting/actions/workflows/historical_scanner.yml" target="_blank" rel="noopener">Open scan workflow ↗</a></div>
+     <div class="notice">The scanner engine runs in GitHub Actions against Cloudflare R2. This page builds the matching configuration; use the workflow link to launch a scan. Results can be loaded below. The browser does not receive R2 credentials.</div>
+    </div>
+   </div>
+   <div>
+    <div class="card"><div class="cardhead"><h3>Scan pipeline</h3><span class="pill">No look-ahead</span></div>
+     <div style="display:flex;justify-content:space-between;margin:16px 0 8px"><span class="muted">Historical data source</span><b>Cloudflare R2</b></div><div class="bar"><i style="width:100%"></i></div>
+     <div style="display:flex;justify-content:space-between;margin:17px 0 8px"><span class="muted">Universe file</span><b>all_tickers.txt</b></div><div class="bar"><i style="width:100%"></i></div>
+     <div style="display:flex;justify-content:space-between;margin:17px 0 8px"><span class="muted">Indicator engine</span><b>Pandas</b></div><div class="bar"><i style="width:100%"></i></div>
+     <div style="display:flex;justify-content:space-between;margin:17px 0 8px"><span class="muted">Date boundary</span><b>Exact session only</b></div><div class="bar"><i style="width:100%"></i></div>
+    </div>
+    <div class="card"><div class="cardhead"><h3>Load scanner results</h3><span class="muted">CSV</span></div>
+     <label class="btn upload">↑ Choose scanner_results.csv<input id="scannerFile" type="file" accept=".csv,text/csv"></label>
+     <p class="muted" style="font-size:11px;line-height:1.6">Upload the CSV artifact downloaded from the historical scanner workflow. Matching stocks will appear in the results table.</p>
+     <div class="metricgrid" style="grid-template-columns:repeat(2,1fr);margin:12px 0 0"><div class="metric"><div class="label">Matches loaded</div><div class="value" id="matchCount">—</div></div><div class="metric"><div class="label">Scan date</div><div class="value" style="font-size:14px" id="loadedDate">—</div></div></div>
+    </div>
+   </div>
+  </div>
+  <div class="card"><div class="cardhead"><h3>Scanner results</h3><div class="toolbar"><button class="btn" id="toBacktest" disabled>Backtest selected universe →</button><button class="btn" id="exportMatches" disabled>Export CSV ↓</button></div></div>
+   <div class="tablewrap" id="scannerTable"><div class="empty">No scan results loaded yet.<br>Run the historical scanner workflow, then upload its CSV artifact here.</div></div>
+  </div>
+ </section>
+
+ <section id="backtester" class="page hide">
+  <div class="grid">
+   <div>
+    <div class="card"><div class="cardhead"><h3>Backtest configuration</h3><span class="pill">Research mode</span></div>
+     <div class="fieldgrid">
+      <div class="field"><label>UNIVERSE SOURCE</label><select id="universe"><option value="full">Full ticker universe · daily scan each session</option><option value="scanner">Loaded scanner results</option></select></div>
+      <div class="field"><label>ENTRY FAMILY</label><select id="entryFamily"><option value="next_session_open">Daily qualification → next session open</option><option value="ema_pullback">EMA pullback</option><option value="orb">Opening Range Breakout (ORB)</option></select></div>
+      <div class="field"><label>STARTING EQUITY · USD</label><input id="equity" type="number" value="50000" min="1"></div>
+      <div class="field"><label>RISK PER TRADE · %</label><input id="risk" type="number" value="1" step=".1" min=".1"></div>
+      <div class="field"><label>MAX POSITION ALLOCATION · %</label><input id="allocation" type="number" value="25" min="1" max="100"></div>
+      <div class="field"><label>INITIAL STOP · %</label><select id="stop"><option>1</option><option>1.5</option><option selected>2</option><option>2.5</option><option>3</option><option>5</option></select></div>
+      <div class="field"><label>EMA EXIT PERIOD</label><select id="emaExit"><option>10</option><option selected>20</option><option>50</option></select></div>
+      <div class="field"><label>EMA EXIT TIMEFRAME</label><select id="exitTf"><option value="1day">Daily</option><option value="4hour">4-hour</option><option value="30min">30-minute</option></select></div>
+     </div>
+     <div style="margin-top:19px"><h3 style="margin-bottom:10px">Trade management</h3>
+      <label class="checkrow"><input type="checkbox" checked disabled> Sell one-third of original position at +1R</label>
+      <label class="checkrow"><input type="checkbox" checked disabled> Move remaining stop to breakeven after partial fill</label>
+      <label class="checkrow"><input type="checkbox" checked> Include commission and slippage assumptions in future run</label>
+     </div>
+     <div class="actions"><button class="btn primary" id="downloadBacktest">Download backtest config</button><a class="btn" href="https://github.com/deekshithCcc/my-backtesting/pull/1" target="_blank" rel="noopener">Engine development PR ↗</a></div>
+     <div class="notice">This page currently prepares configuration only. The full strategy matrix (EMA pullbacks, ORB A/B, 15-minute execution variants, and intraday exits) is not yet implemented in the execution engine. Do not interpret baseline output as a completed strategy backtest.</div>
+    </div>
+   </div>
+   <div>
+    <div class="card"><div class="cardhead"><h3>Strategy coverage</h3><span class="muted">Roadmap</span></div>
+     <div style="margin:12px 0"><b>Daily next-open</b><p class="muted">Baseline execution path under validation.</p><span class="pill">Baseline</span></div><hr style="border:0;border-top:1px solid var(--line)">
+     <div style="margin:12px 0"><b>EMA pullback</b><p class="muted">Daily, 4H and 30M EMA 10/20/50.</p><span class="pill">Planned</span></div><hr style="border:0;border-top:1px solid var(--line)">
+     <div style="margin:12px 0"><b>ORB execution</b><p class="muted">15M confirmation; EMA touch, next bar open, ORH retest.</p><span class="pill">Planned</span></div><hr style="border:0;border-top:1px solid var(--line)">
+     <div style="margin:12px 0"><b>Portfolio analytics</b><p class="muted">Trade ledger, equity, drawdown and monthly returns.</p><span class="pill">Planned</span></div>
+    </div>
+    <div class="card"><h3>Selected scanner universe</h3><div class="metric" style="margin-top:13px"><div class="label">Stocks available</div><div class="value" id="universeCount">0</div><div class="hint">Load scanner CSV to select this universe</div></div></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="analytics" class="page hide">
+  <div class="card"><div class="cardhead"><h3>Backtest analytics</h3><label class="btn upload">↑ Load trades CSV<input id="tradesFile" type="file" accept=".csv,text/csv"></label></div>
+   <div class="muted" style="font-size:11px">Import a trades.csv export to calculate basic realized-trade statistics. Portfolio-level CAGR, equity curve and drawdown require the full engine reports and will be added when those outputs are generated.</div>
+  </div>
+  <div class="metricgrid">
+   <div class="metric"><div class="label">Closed trades</div><div class="value" id="aTrades">—</div><div class="hint">From uploaded trade ledger</div></div>
+   <div class="metric"><div class="label">Win rate</div><div class="value" id="aWin">—</div><div class="hint">Based on calculated trade P&amp;L</div></div>
+   <div class="metric"><div class="label">Net P&amp;L</div><div class="value" id="aPnl">—</div><div class="hint">Price × quantity approximation</div></div>
+   <div class="metric"><div class="label">Profit factor</div><div class="value" id="aPf">—</div><div class="hint">Gross wins / gross losses</div></div>
+  </div>
+  <div class="card"><div class="cardhead"><h3>Trade ledger</h3><button class="btn" id="exportTrades" disabled>Export loaded trades ↓</button></div><div id="tradesTable" class="empty">No trade file loaded yet. Upload a trades.csv report.</div></div>
+  <div class="notice">Analytics will not fabricate CAGR, Sharpe ratio, max drawdown or equity curves from incomplete trade rows. Those require timestamped portfolio equity and cash-flow data from the completed backtester.</div>
+ </section>
+ <div class="footer">NORTHSTAR · Historical research interface · R2 data is read-only · No broker orders are placed from this page.</div>
+</main></div>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let scannerRows=[], tradeRows=[], selectedRows=[];
+const fields=["EMA_10","EMA_20","EMA_50","EMA_150","EMA_200","ADR_15","UP_POCKET_PIVOT","DOWN_POCKET_PIVOT","Close","Volume"];
+const defaults=[
+ {left:"EMA_10",operator:">",right:"EMA_20"},{left:"EMA_20",operator:">",right:"EMA_50"},
+ {left:"EMA_50",operator:">",right:"EMA_150"},{left:"EMA_150",operator:">",right:"EMA_200"},
+ {left:"ADR_15",operator:">",right:"3"}
+];
+function addRule(rule={left:"ADR_15",operator:">",right:"3"}){const d=document.createElement("div");d.className="condition";d.innerHTML='<select class="lhs">'+fields.map(x=>'<option>'+x+'</option>').join("")+'</select><select class="op"><option>&gt;</option><option>&gt;=</option><option>&lt;</option><option>&lt;=</option><option>==</option><option>!=</option></select><input class="rightval" value=""><button class="remove" title="Remove">×</button>';d.querySelector(".lhs").value=rule.left;d.querySelector(".op").value=rule.operator;d.querySelector(".rightval").value=rule.right;d.querySelector(".remove").onclick=()=>d.remove();$("#conditions").append(d)}
+function resetRules(){ $("#conditions").innerHTML="";defaults.forEach(r=>addRule(r));$$("[data-preset]").forEach(b=>b.classList.toggle("on",b.dataset.preset==="stack"))}
+resetRules();
+function config(){const cond=$$("#conditions .condition").map(d=>({left:d.querySelector(".lhs").value,operator:d.querySelector(".op").value,right:(d.querySelector(".rightval").value==="true"?true:d.querySelector(".rightval").value==="false"?false:isNaN(Number(d.querySelector(".rightval").value))?d.querySelector(".rightval").value:Number(d.querySelector(".rightval").value))}));return {logic:$("#logic").value,adr_period:Number($("#adrPeriod").value),pocket_lookback:10,conditions:cond}}
+function saveJSON(obj,name){const blob=new Blob([JSON.stringify(obj,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;a.click();URL.revokeObjectURL(a.href)}
+$("#addCondition").onclick=()=>addRule();
+$("#resetScanner").onclick=resetRules;
+$$("[data-preset]").forEach(b=>b.onclick=()=>{const p=b.dataset.preset;b.classList.toggle("on");if(p==="stack"){if(b.classList.contains("on")){resetRules()}else{$$("#conditions .condition").slice(0,4).forEach(x=>x.remove())}}else{const r={adr:{left:"ADR_15",operator:">",right:"3"},up:{left:"UP_POCKET_PIVOT",operator:"==",right:"true"},down:{left:"DOWN_POCKET_PIVOT",operator:"==",right:"true"}}[p];const found=$$("#conditions .condition").some(x=>x.querySelector(".lhs").value===r.left);if(!found)addRule(r)}});
+$("#downloadScanner").onclick=()=>saveJSON(config(),"scanner_config.json");
+function csvParse(text){const lines=text.replace(/^\uFEFF/,"").trim().split(/\r?\n/);if(!lines.length)return[];const parse=line=>{let out=[],v="",q=false;for(let i=0;i<line.length;i++){const c=line[i];if(c==='"'&&line[i+1]==='"'&&q){v+='"';i++}else if(c==='"')q=!q;else if(c===","&&!q){out.push(v);v=""}else v+=c}out.push(v);return out};const h=parse(lines.shift());return lines.filter(Boolean).map(l=>{const a=parse(l),o={};h.forEach((k,i)=>o[k]=a[i]??"");return o})}
+function table(rows,cols,selectable=false){if(!rows.length)return '<div class="empty">No rows to display.</div>';return '<div class="tablewrap"><table><thead><tr>'+(selectable?'<th>Select</th>':"")+cols.map(c=>'<th>'+c+'</th>').join("")+'</tr></thead><tbody>'+rows.map((r,i)=>'<tr>'+(selectable?'<td><input type="checkbox" class="rowpick" data-i="'+i+'" checked></td>':"")+cols.map(c=>'<td>'+((r[c]??"")===true?'<span class="positive">Yes</span>':(r[c]??"")===false?'<span class="negative">No</span>':(r[c]??""))+'</td>').join("")+'</tr>').join("")+'</tbody></table></div>'}
+function loadScanner(rows){scannerRows=rows;selectedRows=rows.slice();$("#matchCount").textContent=rows.length;$("#loadedDate").textContent=rows[0]?.Date||"—";$("#universeCount").textContent=rows.length;const cols=["Ticker","Date","Close","Volume","EMA_10","EMA_20","EMA_50","EMA_150","EMA_200","ADR_15"];$("#scannerTable").innerHTML=table(rows,cols,true);$("#toBacktest").disabled=!rows.length;$("#exportMatches").disabled=!rows.length;$$(".rowpick").forEach(ch=>ch.onchange=()=>{selectedRows=$$(".rowpick").filter(x=>x.checked).map(x=>scannerRows[Number(x.dataset.i)])})}
+$("#scannerFile").onchange=async e=>{if(e.target.files[0])loadScanner(csvParse(await e.target.files[0].text()))};
+$("#exportMatches").onclick=()=>downloadCSV(selectedRows,"scanner_selected.csv");
+function downloadCSV(rows,name){if(!rows.length)return;const cols=[...new Set(rows.flatMap(Object.keys))];const esc=v=>'"'+String(v??"").replace(/"/g,'""')+'"';const body=[cols.map(esc).join(","),...rows.map(r=>cols.map(c=>esc(r[c])).join(","))].join("\n");const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([body],{type:"text/csv"}));a.download=name;a.click();URL.revokeObjectURL(a.href)}
+$("#toBacktest").onclick=()=>{go("backtester");$("#universe").value="scanner";$("#universeCount").textContent=selectedRows.length};
+$("#downloadBacktest").onclick=()=>{const cfg={portfolio:{starting_equity:Number($("#equity").value),risk_per_trade_pct:Number($("#risk").value),max_position_value_pct:Number($("#allocation").value)},stop_loss_tests_pct:[1,1.5,2,2.5,3,5],selected_stop_pct:Number($("#stop").value),entry_family:$("#entryFamily").value,ema_exit:{period:Number($("#emaExit").value),timeframe:$("#exitTf").value},universe:$("#universe").value,scanner_selected_tickers:selectedRows.map(x=>x.Ticker),trade_management:{partial_exit_at_R:1,partial_fraction:1/3,breakeven_after_confirmed_partial:true}};saveJSON(cfg,"backtest_run_config.json")};
+function go(page){$$(".page").forEach(p=>p.classList.toggle("hide",p.id!==page));$$("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===page));$$(".tab").forEach(b=>b.classList.toggle("active",b.dataset.page===page));const m={scanner:["Historical Scanner","Find stocks that matched your rules on a specific historical session."],backtester:["Backtester","Configure strategy execution and portfolio risk."],analytics:["Analytics","Review imported trade results and portfolio performance."]};$("#pageTitle").textContent=m[page][0];$("#pageSub").textContent=m[page][1]}
+$$("[data-page]").forEach(b=>b.onclick=()=>go(b.dataset.page));
+$("#tradesFile").onchange=async e=>{if(!e.target.files[0])return;tradeRows=csvParse(await e.target.files[0].text());renderTrades()};
+function renderTrades(){const rows=tradeRows;$("#aTrades").textContent=rows.length;const get=(r,...keys)=>{for(const k of keys)if(r[k]!==undefined&&r[k]!=="")return Number(r[k]);return NaN};let pnls=rows.map(r=>{const entry=get(r,"entry_price","Entry Price"),exit=get(r,"final_exit_price","exit_price","Exit Price"),qty=get(r,"final_exit_size","remaining_exit_size","size","quantity"),partialPrice=get(r,"partial_exit_price"),partialQty=get(r,"partial_exit_size");if(!Number.isFinite(entry)||!Number.isFinite(exit)||!Number.isFinite(qty))return NaN;const finalPnl=(exit-entry)*qty;const partialPnl=Number.isFinite(partialPrice)&&Number.isFinite(partialQty)?(partialPrice-entry)*partialQty:0;return finalPnl+partialPnl}).filter(Number.isFinite);if(!pnls.length){$("#aWin").textContent="N/A";$("#aPnl").textContent="N/A";$("#aPf").textContent="N/A"}else{const wins=pnls.filter(x=>x>0).reduce((a,b)=>a+b,0),loss= -pnls.filter(x=>x<0).reduce((a,b)=>a+b,0);$("#aWin").textContent=(pnls.filter(x=>x>0).length/pnls.length*100).toFixed(1)+"%";$("#aPnl").textContent=(wins-loss>=0?"+$":"-$")+Math.abs(wins-loss).toFixed(2);$("#aPf").textContent=loss? (wins/loss).toFixed(2):"∞"}$("#tradesTable").innerHTML=table(rows,Object.keys(rows[0]||{}));$("#exportTrades").disabled=!rows.length}
+$("#exportTrades").onclick=()=>downloadCSV(tradeRows,"trades_export.csv");
+$("#today").textContent=new Intl.DateTimeFormat("en-IN",{dateStyle:"medium"}).format(new Date());
+</script>
+</body></html>
